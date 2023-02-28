@@ -1,0 +1,46 @@
+
+
+
+
+
+{
+  "@context": {
+    "bookingId": "https://schema.org/reservationId",
+    "kundeNavn": "http://schema.org/givenName",
+    "kontakt": "https://schema.org/telephone",
+    "startAdresse": "https://schema.org/pickupLocation",
+    "destinationsAdresse": "https://schema.org/toLocation"
+  },
+
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/product.schema.json",
+  "title": "Taxi Booking",
+  "description": "A taxi booking made by a customer",
+  "type": "object",
+  "properties": {
+    "bookingId": {
+      "description": "The unique identifier for a booking",
+      "type": "integer"
+    },
+    "kundeNavn": {
+      "description": "name of the customer",
+      "type": "string"
+    },
+    "kontakt": {
+      "description": "phonenumber customer",
+      "type": "integer"
+    },
+    "startAdresse": {
+      "description": "custommers pickup point",
+      "type": "string"
+  },
+  "destinationsAdresse": {
+    "description": "customers destination",
+    "type": "string"
+  },
+  "required": [ "bookingId" ]
+}
+  
+}
+
+
